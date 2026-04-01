@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EmmBee.One | Structured Academic Mentoring</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        persian: '#1C3F60',
+                        persiandark: '#0a192f',
+                        gold: '#D4AF37',
+                        lightbg: '#FAFAFA',
+                        darktext: '#111827',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        h1, h2, h3, .font-serif { font-family: 'Playfair Display', serif; }
+        
+        .hero-section {
+            background-image: linear-gradient(to bottom, rgba(10, 25, 47, 0.85), rgba(28, 63, 96, 0.95)), url('images-pdfs-docs/Website-Head-Banner-image.png');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(to right, #D4AF37, #F3E5AB, #D4AF37);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .sanskrit-glow {
+            text-shadow: 0 0 20px rgba(212, 175, 55, 0.6);
+        }
+        
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: #D4AF37;
+        }
+    </style>
+</head>
+<body class="bg-lightbg text-darktext antialiased">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section min-h-screen flex items-center justify-center relative px-4 py-20">
+        <div class="absolute inset-0 bg-persiandark/40"></div>
+        <div class="relative z-10 max-w-5xl mx-auto text-center flex flex-col items-center">
+            
+            <!-- Sanskrit Quote -->
+            <h2 class="text-gold text-3xl md:text-5xl lg:text-6xl font-serif mb-6 sanskrit-glow font-bold tracking-wide">
+                तमसो मा ज्योतिर्गमय ।
+            </h2>
+            
+            <!-- Brand -->
+            <div class="mb-8">
+                <span class="text-white text-xl md:text-3xl tracking-[0.2em] font-light uppercase border-b border-gold/50 pb-2 inline-block">
+                    <span class="font-bold text-gold">EmmBee</span>.One
+                </span>
+            </div>
+
+            <!-- Headline -->
+            <h1 class="text-4xl md:text-6xl font-bold text-white leading-tight mb-8">
+                Structured Academic Mentoring<br/>
+                <span class="text-2xl md:text-4xl font-normal text-gray-300 block mt-4 font-sans">For CBSE Classes 8, 9 & 10 — All Subjects</span>
+            </h1>
+
+            <!-- Features -->
+            <div class="flex flex-wrap justify-center gap-4 text-xs md:text-sm font-semibold tracking-wider text-gold uppercase mb-12">
+                <span class="bg-black/30 px-4 py-2 rounded-full border border-gold/30">Small Batches</span>
+                <span class="bg-black/30 px-4 py-2 rounded-full border border-gold/30">Personal Monitoring</span>
+                <span class="bg-black/30 px-4 py-2 rounded-full border border-gold/30">Focused Learning Environment</span>
+            </div>
+            
+            <!-- CTA -->
+            <a href="#contact" class="bg-gold hover:bg-yellow-600 text-persiandark font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)]">
+                Take the First Step
+            </a>
+        </div>
+        
+        <!-- Scroll indicator -->
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <svg class="w-6 h-6 text-gold opacity-70" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </section>
+
+    <!-- SECTION 1: Philosophy -->
+    <section class="py-24 bg-white text-center px-4">
+        <div class="max-w-4xl mx-auto">
+            <h2 class="text-3xl md:text-5xl font-serif text-persian font-bold leading-tight mb-8">
+                Most students don’t struggle because they are weak.
+            </h2>
+            <p class="text-xl md:text-3xl text-gray-600 font-light mb-8">
+                They struggle because no one teaches them <span class="font-semibold text-gold">how to think</span> and <span class="font-semibold text-gold">how to study</span>.
+            </p>
+            <div class="w-24 h-1 bg-gold mx-auto mb-8 relative rounded-full"></div>
+            <p class="text-lg md:text-2xl font-medium text-persian tracking-wide uppercase">
+                That is what mentoring at EmmBee.One focuses on.
+            </p>
+        </div>
+    </section>
+
+    <!-- SECTION 2: Problem Awareness (Persian Blue + Gold) -->
+    <section class="py-24 bg-persiandark text-white px-4 relative overflow-hidden">
+        <!-- Abstract shape -->
+        <div class="absolute top-0 right-0 w-96 h-96 bg-persian rounded-full mix-blend-multiply filter blur-3xl opacity-50 transform translate-x-1/2 -translate-y-1/2"></div>
+        
+        <div class="max-w-6xl mx-auto relative z-10">
+            <div class="flex flex-col lg:flex-row items-center gap-16">
+                <!-- Image -->
+                <div class="w-full lg:w-5/12">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl border border-gold/20 group">
+                        <div class="absolute inset-0 bg-persiandark/20 group-hover:bg-transparent transition duration-500 z-10"></div>
+                        <img src="images-pdfs-docs/students-image.jpg" alt="Students studying" class="w-full h-auto object-cover transform group-hover:scale-105 transition duration-700">
+                    </div>
+                </div>
+                
+                <!-- Content -->
+                <div class="w-full lg:w-7/12">
+                    <h2 class="text-3xl md:text-5xl font-serif font-bold gold-gradient-text mb-10 leading-snug">
+                        Is Your Child Studying…<br/>But Still Not Fully Clear?
+                    </h2>
+                    
+                    <div class="grid sm:grid-cols-2 gap-x-8 gap-y-6">
+                        <div class="glass-card p-6 rounded-xl flex flex-col">
+                            <svg class="w-8 h-8 text-gold mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                            <span class="text-lg font-medium text-gray-200">Understands in class… but forgets at exam</span>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl flex flex-col">
+                            <svg class="w-8 h-8 text-gold mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                            <span class="text-lg font-medium text-gray-200">Studies long hours… but marks don’t reflect</span>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl flex flex-col">
+                            <svg class="w-8 h-8 text-gold mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path></svg>
+                            <span class="text-lg font-medium text-gray-200">Hesitates to speak English</span>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl flex flex-col">
+                            <svg class="w-8 h-8 text-gold mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                            <span class="text-lg font-medium text-gray-200">Distracted by mobile</span>
+                        </div>
+                        <div class="glass-card p-6 rounded-xl flex flex-col sm:col-span-2">
+                            <svg class="w-8 h-8 text-gold mb-4 w-full mx-auto sm:mx-0 sm:w-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                            <span class="text-lg font-medium text-gray-200 text-center sm:text-left">Feels anxious before exams</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 3: The Relief & Comparison -->
+    <section class="py-24 bg-white px-4">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center mb-20">
+                <h3 class="text-3xl md:text-4xl text-persian font-serif font-bold mb-6">Your child doesn't need more pressure.</h3>
+                <p class="text-xl md:text-2xl text-gray-600">
+                    They need <span class="font-bold text-gold">clarity, structure</span> and the <span class="font-bold text-gold">right guidance</span>.
+                </p>
+            </div>
+
+            <!-- Comparison Table -->
+            <div class="bg-white rounded-3xl shadow-[0_10px_40px_rgba(0,0,0,0.08)] overflow-hidden border border-gray-100 mb-16 relative">
+                <div class="grid md:grid-cols-2">
+                    
+                    <!-- Tuitions -->
+                    <div class="p-8 md:p-12 bg-gray-50 border-r border-gray-200 relative">
+                        <!-- Label -->
+                        <div class="absolute top-0 right-0 bg-gray-200 text-gray-600 text-xs font-bold uppercase py-1 px-4 rounded-bl-lg">The Old Way</div>
+                        
+                        <h4 class="text-2xl font-bold text-gray-500 mb-8 flex items-center">
+                            What Most Tuitions Do
+                        </h4>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <span class="text-red-400 mr-3 mt-1 text-xl leading-none">×</span>
+                                <span class="text-gray-600 text-lg">Focus on finishing the syllabus</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-400 mr-3 mt-1 text-xl leading-none">×</span>
+                                <span class="text-gray-600 text-lg">Large batches, limited attention</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-400 mr-3 mt-1 text-xl leading-none">×</span>
+                                <span class="text-gray-600 text-lg">Teaching → Homework → Move on</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-400 mr-3 mt-1 text-xl leading-none">×</span>
+                                <span class="text-gray-600 text-lg">Marks-first approach</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-400 mr-3 mt-1 text-xl leading-none">×</span>
+                                <span class="text-gray-600 text-lg">Doubts handled occasionally</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-red-400 mr-3 mt-1 text-xl leading-none">×</span>
+                                <span class="text-gray-600 text-lg">Generic study approach & No focus beyond academics</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- EmmBee.One -->
+                    <div class="p-8 md:p-12 bg-persian relative">
+                        <!-- Label -->
+                        <div class="absolute top-0 right-0 bg-gold text-persiandark text-xs font-bold uppercase py-1 px-4 rounded-bl-lg">The EmmBee Way</div>
+
+                        <h4 class="text-2xl font-bold text-white mb-8 flex items-center">
+                            What EmmBee.One Does
+                        </h4>
+                        
+                        <ul class="space-y-6">
+                            <li class="flex items-start">
+                                <span class="text-gold mr-3 mt-1 text-xl leading-none font-bold">✓</span>
+                                <span class="text-gray-100 text-lg">Focus on building <span class="text-gold font-medium">how a student thinks</span></span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-3 mt-1 text-xl leading-none font-bold">✓</span>
+                                <span class="text-gray-100 text-lg">Small batch of 10 — <span class="text-gold font-medium">every student is personally known</span></span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-3 mt-1 text-xl leading-none font-bold">✓</span>
+                                <span class="text-gray-100 text-lg">Teach → Practice → Review → <span class="text-gold font-medium">Improve</span></span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-3 mt-1 text-xl leading-none font-bold">✓</span>
+                                <span class="text-gray-100 text-lg">Understanding-first <span class="text-gold font-medium">(marks follow naturally)</span></span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-3 mt-1 text-xl leading-none font-bold">✓</span>
+                                <span class="text-gray-100 text-lg">Weekly dedicated doubt-clearing sessions</span>
+                            </li>
+                            <li class="flex items-start">
+                                <span class="text-gold mr-3 mt-1 text-xl leading-none font-bold">✓</span>
+                                <span class="text-gray-100 text-lg">Structured system & Career awareness, mindset included</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Core message Highlight -->
+            <div class="text-center p-8 bg-persiandark text-white rounded-2xl mx-auto max-w-3xl shadow-xl transform hover:-translate-y-1 transition border border-gold/30">
+                <p class="text-2xl md:text-3xl font-serif font-bold italic text-gold">
+                    "The syllabus is completed.<br/><span class="text-white text-xl md:text-2xl mt-2 inline-block">Vs</span><br/>The student is Built."
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION 4: The Structure Deep Dive -->
+    <section class="py-24 bg-gray-50 px-4 relative">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-serif text-persian font-bold">What Happens Inside EmmBee.One</h2>
+            </div>
+
+            <div class="flex flex-col lg:flex-row gap-12 items-stretch">
+                
+                <!-- Image -->
+                <div class="w-full lg:w-5/12 rounded-3xl overflow-hidden shadow-2xl h-96 lg:h-auto order-1 lg:order-2">
+                    <img src="images-pdfs-docs/Classroom-image.png" alt="EmmBee Classroom environment" class="w-full h-full object-cover">
+                </div>
+
+                <!-- Content -->
+                <div class="w-full lg:w-7/12 flex flex-col justify-center order-2 lg:order-1 gap-8">
+                    
+                    <!-- Academic System -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 gradient-border">
+                        <h3 class="text-2xl font-bold text-persian mb-6 flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-gold text-persiandark flex items-center justify-center mr-3 text-sm">1</span> 
+                            Academic System
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="text-gold mr-2 font-bold">•</span> Only 10 students per batch — every student known personally</li>
+                            <li class="flex items-start"><span class="text-gold mr-2 font-bold">•</span> Weekly concept clarity sessions</li>
+                            <li class="flex items-start"><span class="text-gold mr-2 font-bold">•</span> Practice worksheets and homework review</li>
+                            <li class="flex items-start"><span class="text-gold mr-2 font-bold">•</span> Monthly chapter-wise tests</li>
+                            <li class="flex items-start"><span class="text-gold mr-2 font-bold">•</span> Parent-teacher review sessions — you always know how your child is doing</li>
+                            <li class="flex items-start"><span class="text-gold mr-2 font-bold">•</span> NCERT mastery + carefully selected reference material</li>
+                            <li class="flex items-start"><span class="text-gold mr-2 font-bold">•</span> Understanding first — speed and marks follow naturally</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Beyond Textbooks -->
+                    <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 gradient-border">
+                        <h3 class="text-2xl font-bold text-persian mb-6 flex items-center">
+                            <span class="w-8 h-8 rounded-full bg-persian text-white flex items-center justify-center mr-3 text-sm">2</span> 
+                            Beyond Textbooks
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-start"><span class="text-persian mr-2 font-bold">•</span> Spoken English confidence</li>
+                            <li class="flex items-start"><span class="text-persian mr-2 font-bold">•</span> Soft skills and communication</li>
+                            <li class="flex items-start"><span class="text-persian mr-2 font-bold">•</span> Career awareness conversations</li>
+                            <li class="flex items-start"><span class="text-persian mr-2 font-bold">•</span> Guidance on managing digital distractions</li>
+                            <li class="flex items-start"><span class="text-persian mr-2 font-bold">•</span> AI in education — what it means for students today</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+            
+            <div class="mt-16 text-center">
+                <p class="text-2xl font-serif text-persian font-bold italic">
+                    Because academic success today requires more than textbooks.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECTION 5: Testimonies -->
+    <section class="py-24 bg-persiandark text-white px-4 relative">
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-5xl font-serif font-bold text-gold">Words of Impact</h2>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center mb-16">
+                <!-- Image & Student -->
+                <div class="text-center flex flex-col items-center">
+                    <div class="w-48 h-48 md:w-64 md:h-64 rounded-full p-2 bg-gradient-to-tr from-gold to-persian mb-6 shadow-2xl">
+                        <img src="images-pdfs-docs/Sai-Image.png" alt="Sai - 10th CBSE" class="w-full h-full rounded-full object-cover border-4 border-persiandark">
+                    </div>
+                    <h3 class="text-2xl font-bold text-white tracking-wide">Sai</h3>
+                    <p class="text-gold font-medium">Class 10 CBSE</p>
+                </div>
+                
+                <!-- Quotes -->
+                <div class="space-y-6 relative">
+                    <svg class="absolute -top-6 -left-8 w-16 h-16 text-white/5" fill="currentColor" viewBox="0 0 32 32"><path d="M10 8c-3.3 0-6 2.7-6 6v10h10V14H6c0-2.2 1.8-4 4-4V8zm18 0c-3.3 0-6 2.7-6 6v10h10V14h-8c0-2.2 1.8-4 4-4V8z"></path></svg>
+                    
+                    <div class="glass-card p-6 rounded-r-2xl rounded-bl-2xl border-l-4 border-l-gold shadow-lg hover:shadow-xl transition">
+                        <p class="text-xl italic font-serif">“Exam mai baithne ka dar nikal gaya.”</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-r-2xl rounded-bl-2xl border-l-4 border-l-gold shadow-lg hover:shadow-xl transition transform md:translate-x-4">
+                        <p class="text-xl italic font-serif">“My learning skills completely transformed.”</p>
+                    </div>
+                    <div class="glass-card p-6 rounded-r-2xl rounded-bl-2xl border-l-4 border-l-gold shadow-lg hover:shadow-xl transition transform md:translate-x-8">
+                        <p class="text-xl italic font-serif">"Overall confidence increased.”</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parent Feedback -->
+            <div class="max-w-3xl mx-auto glass-card p-8 md:p-12 rounded-3xl relative">
+                <div class="absolute top-0 right-10 transform -translate-y-1/2 bg-gold text-persiandark font-bold px-4 py-1 rounded-full text-sm">Parent Review</div>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-6 font-light">
+                    “I honestly can't recommend this mentor enough. They truly gave 200% effort into my child's growth. What impressed me most was their accessibility—they even took the time to hop on calls during after-hours to make sure my son was on the right track. It’s rare to find an educator this committed to their students' success.”
+                </p>
+                <div class="flex items-center gap-4">
+                    <div class="w-12 h-12 rounded-full bg-persian border border-gold flex items-center justify-center text-gold font-bold text-xl">P</div>
+                    <div>
+                        <p class="font-bold text-white text-lg">A Proud Parent</p>
+                        <p class="text-gold text-sm font-medium">Dehradun</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- SECTION 6: Pricing & CTA -->
+    <section class="py-24 bg-white px-4" id="contact">
+        <div class="max-w-6xl mx-auto">
+            
+            <div class="text-center mb-16">
+                <span class="bg-red-100 text-red-800 text-sm font-bold tracking-widest uppercase px-4 py-1 rounded-full mb-4 inline-block border border-red-200">Admissions Open</span>
+                <h2 class="text-3xl md:text-5xl font-serif text-persian font-bold mt-4">Monthly Mentorship Fee</h2>
+                <p class="text-xl text-gray-500 mt-4 max-w-2xl mx-auto">Only 10 seats per batch. So every student receives individual attention.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto mb-16">
+                <!-- Class 8 -->
+                <div class="p-8 bg-gray-50 border border-gray-100 rounded-2xl text-center shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Class 8</h3>
+                    <p class="text-gray-500 mb-6">All Subjects</p>
+                    <div class="text-4xl font-bold text-persian mb-8">₹3000<span class="text-lg font-normal text-gray-400">/mo</span></div>
+                    <a href="https://wa.me/919259021338?text=I%20want%20to%20reserve%20a%20seat%20for%20Class%208" target="_blank" class="block w-full py-4 text-persian font-bold border-2 border-persian rounded-xl hover:bg-persian hover:text-white transition">Enroll Now</a>
+                </div>
+                
+                <!-- Class 9 -->
+                <div class="p-8 bg-gray-50 border border-gray-100 rounded-2xl text-center shadow-sm hover:shadow-xl transition transform hover:-translate-y-2">
+                    <h3 class="text-2xl font-bold text-gray-700 mb-2">Class 9</h3>
+                    <p class="text-gray-500 mb-6">All Subjects</p>
+                    <div class="text-4xl font-bold text-persian mb-8">₹4000<span class="text-lg font-normal text-gray-400">/mo</span></div>
+                    <a href="https://wa.me/919259021338?text=I%20want%20to%20reserve%20a%20seat%20for%20Class%209" target="_blank" class="block w-full py-4 text-persian font-bold border-2 border-persian rounded-xl hover:bg-persian hover:text-white transition">Enroll Now</a>
+                </div>
+                
+                <!-- Class 10 -->
+                <div class="p-8 bg-persiandark border border-gold rounded-2xl text-center shadow-xl transition transform scale-105 hover:-translate-y-2 relative">
+                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-gold text-persiandark text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider shadow">Most Popular</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">Class 10</h3>
+                    <p class="text-gold mb-6">Board Prep & Mentoring</p>
+                    <div class="text-4xl font-bold text-white mb-8">₹5000<span class="text-lg font-normal text-gray-400">/mo</span></div>
+                    <a href="https://wa.me/919259021338?text=I%20want%20to%20reserve%20a%20seat%20for%20Class%2010" target="_blank" class="block w-full py-4 bg-gold text-persiandark font-bold rounded-xl hover:bg-yellow-600 transition shadow-[0_4px_14px_rgba(212,175,55,0.4)]">Enroll Now</a>
+                </div>
+            </div>
+
+            <!-- Guarantee Box -->
+            <div class="max-w-3xl mx-auto bg-[#fffbeb] border-2 border-gold/50 rounded-2xl p-8 md:p-10 text-center relative overflow-hidden shadow-lg mb-16">
+                <div class="absolute -top-10 -right-10 w-32 h-32 bg-gold/10 rounded-full blur-2xl"></div>
+                
+                <h3 class="text-2xl font-serif font-bold text-persian mb-4">We believe improvement should be visible — not promised.</h3>
+                <p class="text-lg text-gray-700 mb-2">Join for one full month.</p>
+                <p class="text-lg text-gray-700 mb-6">If you do not see serious academic engagement and measurable improvement —</p>
+                <div class="inline-block bg-persian text-gold font-bold px-6 py-2 rounded-lg text-xl tracking-wide shadow-md">
+                    Get 100% Refund.
+                </div>
+            </div>
+            
+            <!-- Global CTA -->
+            <div class="text-center">
+                <h3 class="text-2xl md:text-3xl font-bold text-persian mb-6">Ready to Take the First Step?</h3>
+                <p class="text-gray-600 mb-8 max-w-xl mx-auto">Check seat availability or schedule a free 1-hour Academic Assessment Discussion</p>
+                
+                <a href="https://wa.me/919259021338?text=CLASS%208/9/10" target="_blank" class="inline-flex items-center justify-center bg-[#25D366] hover:bg-[#1ebd5a] text-white font-bold text-xl px-10 py-5 rounded-full transition-all transform hover:scale-105 shadow-xl">
+                    <svg class="w-8 h-8 mr-3" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.888-4.435 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                    WhatsApp "CLASS 8/9/10"
+                </a>
+                <p class="mt-4 text-sm font-medium text-gray-500 uppercase tracking-wide">
+                    To: 9259021338
+                </p>
+                <p class="text-sm font-bold text-red-500 mt-2">
+                    Note: Once the batch is full, admissions close.
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-[#0a111a] text-gray-400 py-12 px-4 border-t border-gray-800">
+        <div class="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6 text-center md:text-left">
+            
+            <div class="mb-4 md:mb-0">
+                <span class="text-white text-xl tracking-[0.1em] font-light uppercase inline-block font-sans">
+                    <span class="font-bold text-gold">EmmBee</span>.One
+                </span>
+                <p class="mt-2 text-sm text-gray-500">Mentoring that builds the student.</p>
+            </div>
+            
+            <div class="flex flex-col gap-2 text-sm md:text-right">
+                <p class="flex items-center justify-center md:justify-end gap-2">
+                    <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    📍 Sai Lok, Phase-1, GMS Road, Dehradun, Uttarakhand
+                </p>
+                <p class="flex items-center justify-center md:justify-end gap-2">
+                    <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
+                    📲 / 💬 : 9259021338
+                </p>
+                <p class="flex items-center justify-center md:justify-end gap-2">
+                    <svg class="w-4 h-4 text-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+                    🌐 www.emmbee.one
+                </p>
+            </div>
+            
+        </div>
+        <div class="mt-12 text-center text-xs text-gray-600 border-t border-gray-800 pt-6">
+            Copyright © 2026 EmmBee.One. All Rights Reserved.
+        </div>
+    </footer>
+
+</body>
+</html>
