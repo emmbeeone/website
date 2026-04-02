@@ -85,7 +85,7 @@
         
         <div class="relative group pointer-events-auto">
             <button onclick="openShareModal()" class="inline-flex items-center text-white bg-white/10 hover:bg-whatsapp border border-white/20 backdrop-blur-md font-bold px-4 py-2 md:px-6 md:py-3 rounded-full transition-all shadow-lg hover:shadow-xl hover:border-whatsapp hover:scale-105 text-xs md:text-sm focus:outline-none">
-                <svg class="w-4 h-4 md:w-5 md:h-5 sm:mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.888-4.435 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                <svg class="w-4 h-4 md:w-5 md:h-5 mr-1.5 md:mr-2" fill="currentColor" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.888-4.435 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.347-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.876 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
                 <span class="hidden sm:inline">Share with a Friend</span>
                 <span class="inline sm:hidden">Share</span>
             </button>
@@ -122,25 +122,28 @@
             </h1>
 
             <!-- Features -->
-            <div class="flex flex-wrap justify-center gap-4 text-xs md:text-sm font-semibold tracking-wider text-gold uppercase mb-12 drop-shadow-md">
-                <span class="bg-black/40 px-4 py-2 rounded-full border border-gold/40">Small Batches</span>
-                <span class="bg-black/40 px-4 py-2 rounded-full border border-gold/40">Personal Monitoring</span>
-                <span class="bg-black/40 px-4 py-2 rounded-full border border-gold/40">Focused Learning Environment</span>
+            <div class="flex flex-wrap justify-center items-center gap-2 md:gap-3 text-[10px] md:text-sm font-bold tracking-widest text-gold uppercase mb-12 [text-shadow:_0_1px_2px_rgba(0,0,0,0.8)]">
+                <span>Small Batches</span>
+                <span class="text-white/40 text-xs px-1 md:px-0">•</span>
+                <span>Personal Monitoring</span>
+                <span class="text-white/40 text-xs px-1 md:px-0">•</span>
+                <span>Focused Learning Environment</span>
             </div>
             
-            <!-- CTA -->
-            <a href="#contact" class="bg-gold hover:bg-yellow-600 text-persiandark font-bold text-lg px-8 py-4 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_20px_rgba(212,175,55,0.4)] relative z-20">
+            <!-- Pre-CTA Text -->
+            <p class="text-xs md:text-base font-medium text-gray-200 tracking-wide bg-black/40 px-6 py-3 rounded-full border border-white/20 backdrop-blur-md shadow-lg [text-shadow:_0_1px_2px_rgba(0,0,0,0.8)] mb-3 relative z-20">
+                Reserve Seat or book 1-hr <span class="text-gold font-bold">Free Academic Assessment</span> Discussion
+            </p>
+            
+            <!-- Animated Downward Arrow -->
+            <div class="mb-4 animate-bounce z-10 relative">
+                <svg class="w-6 h-6 text-gold opacity-90 drop-shadow-md" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+            </div>
+            
+            <!-- CTA Button -->
+            <a href="#contact" class="bg-gold hover:bg-yellow-500 text-persiandark font-extrabold text-lg md:text-xl px-10 py-5 rounded-full transition-all duration-300 transform hover:scale-105 shadow-[0_0_30px_rgba(212,175,55,0.4)] relative z-20">
                 Take the First Step
             </a>
-            
-            <!-- Animated Upward Arrow -->
-            <div class="mt-5 mb-3 animate-bounce">
-                <svg class="w-6 h-6 text-gold drop-shadow-md opacity-90 rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
-            </div>
-            
-            <p class="text-sm md:text-base font-medium text-gray-200 tracking-wide bg-black/30 px-5 py-2 rounded-full border border-white/10 backdrop-blur-sm [text-shadow:_0_1px_2px_rgba(0,0,0,0.8)] relative z-20">
-                Reserve Seat or book 1-hr Free Academic Assessment Discussion
-            </p>
         </div>
     </section>
 
